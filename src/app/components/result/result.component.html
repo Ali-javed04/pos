@@ -1,0 +1,35 @@
+<div class="container custom-center mt-4 pt-4">
+  <div class="col-md-6 pt-4 pt-4">
+    <div class="row custom-right p-4">
+      <button (click)="Print()" class="btn btn-primary">Print</button>
+    </div>
+    <div class="card p-4">
+      <h3 class="text-center">Sale Invoice</h3>
+      <table class="table table-responsive">
+        <thead>
+          <th>Product name</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Total</th>
+
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of list">
+            <td>{{item.name}}</td>
+            <td>{{item.price}}</td>
+            <td>{{item.quantity}}</td>
+            <td>{{item.totalPrice}}</td>
+          </tr>
+          <tr>
+            <th>Total</th>
+            <td></td>
+            <td></td>
+            <th>{{price}}</th>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</div>

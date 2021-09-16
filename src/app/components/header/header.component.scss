@@ -1,0 +1,98 @@
+@import '../../../styles.scss';
+.navbar {padding: 0; margin: 0 ; }
+.navbar .navbar-nav .nav-link { color: white;}
+.navbar .navbar-nav .nav-link:hover { color: #fbc531;  overflow: hidden;}
+.navbar .navbar-nav .active > .nav-link { color: #fbc531; }
+
+footer a.text-light:hover { color: #fed136!important; text-decoration: none; overflow: hidden; }
+footer .cizgi { border-right: 1px solid #535e67; }
+@media (max-width: 992px) { footer .cizgi { border-right: none; } }
+.logo-img {
+  height: 36px;
+}
+.main-div {
+  border-bottom: 1px solid black;
+}
+.navbar-btn{
+  background: transparent;
+  border: none;
+  font-size: 28px;
+  color: #008fd4;
+}
+
+.active{color: #fbc531;}
+.up-icon {
+  margin-bottom: -5px;
+}
+
+.iconi {
+display: none;
+  position: absolute;
+  font-size: x-large;
+  color: #e8e822;
+  padding-left: 20px;
+}
+.bar-color {
+  color: white;
+  background: #e2928f;
+  padding: 5px 10px;
+    border-radius: 17px;
+
+}
+.header-user-img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid #0b87c5;
+  margin-top: 2px;
+}
+
+.ul-direction {
+  flex-direction: column !important;
+
+}
+.header-tag {
+  position: fixed;
+  width: auto;
+
+  @include mobile {
+    position: inherit;
+    width: auto;
+  }
+
+  @include tablet {
+    height: auto;
+    position: inherit;
+  }
+
+}
+.background{
+  background-color: rgba(0, 0, 0, 0.671);
+  height: 100vh;
+  @include mobile {
+    height:auto;
+  }
+  @include tablet {
+    height: auto;
+  }
+
+.main-logo {
+  color: white;
+  font-size: 39px;
+}
+.hide-logo {
+  @include mobile {
+    display: none;
+  }
+}
+.btn-logout {
+  justify-content: center;
+  color: white;
+  background: transparent;
+}
+.btn-logout:hover {
+  background: #691d1a;
+  border-radius: 4px;
+
+}
+}

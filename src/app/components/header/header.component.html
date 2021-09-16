@@ -1,0 +1,41 @@
+
+<header class="header-tag">
+  <div class="container-fluid background">
+    <nav class="navbar navbar-expand-lg navbar-expand-md">
+        <a class="navbar-brand d-sm-block d-lg-none d-md-none main-logo" [routerLink]="['/']" >POS</a>
+        <button class="navbar-btn d-sm-block d-lg-none d-md-none" type="button" data-toggle="collapse" data-target="#nvbCollapse" aria-controls="nvbCollapse">
+          <i class="fa fa-bars bar-color" aria-hidden="true"></i>
+        </button>
+        <div class="collapse navbar-collapse " id="nvbCollapse">
+          <ul class="navbar-nav  ul-direction">
+            <!-- <a class="navbar-brand d-lg-block d-md-block  main-logo hide-logo" [routerLink]="['/']" >POS</a> -->
+            <li class="nav-item pl-1 mt-4" [ngClass]="{'active': currentState('login')}" >
+              <a class="nav-link" [routerLink]="['/login']" routerLinkActive="router-link-active" >
+                <i class="fa fa-user-o mr-2" aria-hidden="true"></i></a>
+            </li>
+            <li class="nav-item pl-1 mt-4" [ngClass]="{'active': currentState('home')}" >
+              <a class="nav-link" [routerLink]="['/']" routerLinkActive="router-link-active" >
+                <i class="fa fa-bars mr-2" aria-hidden="true"></i></a>
+            </li>
+            <li class="nav-item pl-1 mt-4" [ngClass]="{'active': currentState('Profile')}" >
+              <a class="nav-link" [routerLink]="['/profile']" routerLinkActive="router-link-active" >
+                <i class="fa fa-user-o mr-2" aria-hidden="true"></i></a>
+            </li>
+            <li class="nav-item pl-1 mt-4" [ngClass]="{'active': currentState('welcome')}" >
+              <a class="nav-link" [routerLink]="['/trending']" routerLinkActive="router-link-active" >
+                <i class="fa fa-fire mr-2" aria-hidden="true"></i></a>
+            </li>
+            <li class="nav-item pl-1 mr-2 mt-4" [ngClass]="{'active': currentState('Facebook')}" >
+              <a class="nav-link" [routerLink]="['/facebook']" routerLinkActive="router-link-active" >
+                 <i class="fa fa-facebook-official mr-2" aria-hidden="true"></i></a>
+            </li>
+            <li class="nav-item pl-1 mr-2 mt-4" [ngClass]="{'active': currentState('logout')}" >
+             <button class="btn btn-logout" > <i class="fa fa-power-off mr-2" aria-hidden="true" ></i></button>
+            </li>
+          </ul>
+        </div>
+
+    </nav>
+  </div>
+
+</header>

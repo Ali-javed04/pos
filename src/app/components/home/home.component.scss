@@ -1,0 +1,73 @@
+@import '../../../styles.scss';
+.custom-btn {
+  width: 100%;
+  color: white;
+  background: #389F02;
+}
+.custom-float {
+  justify-content: flex-end;
+  display: flex;
+}
+.row-bg {
+  background: white;
+    padding: 9px;
+    border-radius: 4px;
+
+}
+.custom-btnx {
+  border: none;
+    background: white;
+}
+.card-custom {
+  height: 100px;
+  width: 100%;
+}
+.custom-p {
+  font-size: large;
+  font-weight: bold;
+  font-family: revert;
+  padding: 7px;
+
+}
+.main-card {
+  border-radius: 10px;
+  position: relative;
+}
+.selectedInteger {
+  position: absolute;
+  right: -1px;
+  top: 0;
+  background: green;
+  padding: 10px;
+  color: white;
+  border-radius: 1px 0px 0px 31px;
+}
+.selected {
+  border: 2px solid green;
+}
+.specific-height {
+  height: 600px;
+  overflow-y: scroll;
+}
+.backbutton {
+  background: #2C7B00;
+}
+.custom-right {
+  justify-content: flex-end;
+  display: flex;
+}
+.bottom-nav {
+  height: 60px;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  margin-left: -34px !important;
+
+  @include mobile {
+    height: fit-content;
+    margin: 0 !important;
+  }
+
+}
